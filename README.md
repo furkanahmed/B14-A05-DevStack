@@ -47,6 +47,18 @@ DevStack Builder provides a streamlined visual interface where developers can br
 
 ---
 
+## 💡 Key Challenges Faced & How I Solved Them
+
+1. **Duplicate Prevention & Real-time State Synchronization:**
+   - *Challenge:* Preventing users from inadvertently adding duplicate items while keeping the dynamic sidebar count, technology cards, and total metrics instantly reactive across components.
+   - *Solution:* Implemented an array existence check (`stack.some(item => item.id === tech.id)`) before mutating state, coupled with informative color-coded toast alerts (`React-Toastify`) to guide users without causing unnecessary component re-renders.
+
+2. **SPA Client Routing on Edge Hosting (Netlify):**
+   - *Challenge:* Single Page Applications (SPAs) built with Vite encounter 404 errors when deep sub-routes or pages are refreshed directly on static edge hosting servers.
+   - *Solution:* Created a declarative `public/_redirects` rule (`/* /index.html 200`) and configured `netlify.toml` build commands so edge servers rewrite all client requests to `index.html` seamlessly.
+
+---
+
 ## 📦 Key Dependencies
 
 - `react`: `^18.3.1`
