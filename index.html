@@ -9,8 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #nl-badge-frame,
+      #nl-hud-frame,
+      iframe[title*="Netlify"],
+      [data-netlify-site-id] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
   </head>
   <body class="bg-[#FCFCFD] text-[#0F172A] antialiased selection:bg-pink-500 selection:text-white">
+    <div id="nl-badge-frame" style="display:none!important"></div>
+    <div id="nl-hud-frame" style="display:none!important"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

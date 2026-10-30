@@ -6,7 +6,7 @@ DevStack Builder is an interactive, modern web application designed for develope
 
 ## 🌐 Live URL & Repository
 
-- **Live Application**: [https://b14-a05-dev-stack.vercel.app/](https://b14-a05-dev-stack.vercel.app/)
+- **Live Application**: [https://devstack-live.netlify.app/](https://devstack-live.netlify.app/)
 - **GitHub Repository**: [https://github.com/furkanahmed/B14-A05-DevStack](https://github.com/furkanahmed/B14-A05-DevStack)
 
 ---
@@ -84,7 +84,7 @@ Follow these steps to clone and run the project locally on your machine:
 
 ---
 
-## ❓ React Conceptual Questions & Answers
+## 💡 React Conceptual Questions & Answers
 
 ### 1. What is JSX, and why is it used in React?
 **Answer:** JSX (JavaScript XML) is a syntax extension for JavaScript that allows writing HTML-like structures directly inside JavaScript code. It is used in React because it makes building and reading UI components much simpler and intuitive compared to writing standard `React.createElement()` calls.
@@ -113,4 +113,4 @@ Follow these steps to clone and run the project locally on your machine:
 
 ## 👨‍💻 Author
 
-**Furkan Ahmed** — [GitHub Profile](https://github.com/furkanahmed) · [Website](https://dremoy.com)
+**Furkan Ahmed** — [GitHub Profile](https://github.com/furkanahmed) • [Website](https://dremoy.com)
