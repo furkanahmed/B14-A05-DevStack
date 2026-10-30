@@ -1,29 +1,86 @@
-# 🧱 DevStack Builder Website
+# 🧱 DevStack Builder — Interactive Tech Stack Explorer
 
-DevStack Builder is an interactive, modern web application designed for developers to explore, compare, and assemble their ideal software development technology stack.
-
-## 🚀 About The Project
-
-DevStack Builder provides a streamlined visual interface where developers can browse popular frontend frameworks, backend runtimes, databases, styling libraries, and DevOps tools. Users can build their personalized stack side-by-side and manage their selections effortlessly.
+DevStack Builder is an interactive, modern web application designed for developers to explore, compare, and assemble their ideal software development technology stack in real time.
 
 ---
 
-## ⚙️ Technologies Used
+## 🌐 Live URL & Repository
 
-- **Frontend:** React.js (Vite)
-- **Styling:** Tailwind CSS, DaisyUI, Vanilla CSS Variables
-- **Icons:** Lucide React, DevIcon SVG Icons
-- **Notifications:** React-Toastify
-- **Data Source:** JSON (`/data/technologies.json`)
+- **Live Application**: [https://b14-a05-dev-stack.vercel.app/](https://b14-a05-dev-stack.vercel.app/)
+- **GitHub Repository**: [https://github.com/furkanahmed/B14-A05-DevStack](https://github.com/furkanahmed/B14-A05-DevStack)
+
+---
+
+## 📸 Preview Banner
+
+<p align="center">
+  <img src="src/assets/banner-stack.png" width="100%" alt="DevStack Builder Banner" />
+</p>
+
+---
+
+## 📖 About The Project
+
+DevStack Builder provides a streamlined visual interface where developers can browse popular frontend frameworks, backend runtimes, databases, styling libraries, and DevOps tools. Users can build their personalized stack side-by-side and manage their selections effortlessly with real-time feedback and state synchronization.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend Library:** [React 18](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) & [DaisyUI](https://daisyui.com/)
+- **Icons:** [Lucide React](https://lucide.dev/) & DevIcon Vector SVGs
+- **Toast Notifications:** [React-Toastify](https://fkhadra.github.io/react-toastify/)
+- **Data Source:** RESTful Local JSON (`/data/technologies.json`)
 - **Language:** JavaScript (ES6+)
 
 ---
 
-## ✨ Key Features
+## ✨ 5 Key Features
 
 1. **Interactive Tech Stack Selection:** Browse 12+ curated technologies categorized into Frontend, Backend, Database, Language, Styling, and DevOps with real-time add/remove capabilities.
-2. **Duplicate Prevention & Real-time Notifications:** Prevents adding the same technology twice and provides clear visual feedback via `React-Toastify` toast notifications.
-3. **Unified Brand Gradient System:** Utilizes a single CSS variable for the orange-pink-purple brand gradient across headings, buttons, and logos for easy theme customization.
+2. **Duplicate Prevention & Smart Toast Alerts:** Built-in validation prevents adding the same technology twice, displaying color-coded feedback (`React-Toastify`) for successful additions, duplicates, and removals.
+3. **Real-time Live Stack Sidebar:** Dedicated responsive sidebar dynamically calculating selected stack counts, displaying selected technology cards, and enabling individual item deletion.
+4. **One-Click Clear Stack (Remove All):** Quickly reset and empty the assembled technology stack with a single click, providing an instant state reset.
+5. **Unified Modern Responsive Design:** Designed with a unified brand gradient system, custom CSS variables, and fluid responsive layouts for mobile, tablet, and desktop devices.
+
+---
+
+## 📦 Key Dependencies
+
+- `react`: `^18.3.1`
+- `react-dom`: `^18.3.1`
+- `lucide-react`: `^0.460.0`
+- `react-toastify`: `^10.0.5`
+- `tailwindcss`: `^3.4.1`
+- `daisyui`: `^4.12.10`
+- `vite`: `^5.4.1`
+
+---
+
+## 🚀 Getting Started Locally
+
+Follow these steps to clone and run the project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/furkanahmed/B14-A05-DevStack.git
+   cd B14-A05-DevStack
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Open [http://localhost:5173](http://localhost:5173) to view the application in action.
 
 ---
 
@@ -51,3 +108,9 @@ DevStack Builder provides a streamlined visual interface where developers can br
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 **Answer:** Data is passed from parent to child via **props**. To send data back from a child to a parent, the parent passes a **callback function** as a prop to the child, which the child invokes with data when an event (like a button click) occurs.
+
+---
+
+## 👨‍💻 Author
+
+**Furkan Ahmed** — [GitHub Profile](https://github.com/furkanahmed) · [Website](https://dremoy.com)
